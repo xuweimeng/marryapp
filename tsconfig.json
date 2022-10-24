@@ -6,6 +6,11 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "./",
+    "paths": {
+	  // 根据别名配置相关路径
+      "@/*": ["./src/*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
