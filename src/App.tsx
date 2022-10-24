@@ -9,8 +9,8 @@ import Home from './pages/Home'
 function App() {
   return (
     <div className="App">
-      {/* <BasicLayout /> */}
-      <Home />
+      <BasicLayout />
+      {/* <Home /> */}
     </div>
   );
 }

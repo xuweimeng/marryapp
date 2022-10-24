@@ -14,8 +14,7 @@ import {
   UserOutline,
 } from 'antd-mobile-icons'
 
-// import styles from './index.less'
-import './index.less'
+import styles from './index.module.less'
 const Bottom: FC = () => {
   // const history = useHistory()
   const location = useLocation()
@@ -61,11 +60,11 @@ const Bottom: FC = () => {
 export default () => {
   return (
     <Router initialEntries={['/home']}>
-      <div className={'app'}>
-        <div className={'top'}>
+      <div className={styles.app}>
+        <div className={styles.top}>
           <NavBar>配合路由使用</NavBar>
         </div>
-        <div className={'body'}>
+        <div className={styles.body}>
           <Routes>
             <Route path='/home' element={ <Home />} />
             <Route path='/todo' element={ <Todo />} />
@@ -73,7 +72,7 @@ export default () => {
             <Route path='/me' element={ <PersonalCenter />} />
           </Routes>
         </div>
-        <div className={'bottom'}>
+        <div className={styles.bottom}>
           <Bottom />
         </div>
       </div>
