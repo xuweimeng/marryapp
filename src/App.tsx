@@ -1,14 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from 'antd-mobile'
+import BasicLayout from './layout/BasicLayout';
 
 function App() {
   return (
     <div className="App">
-      <Button color='primary' fill='solid'>
-            Solid
-          </Button>
+      <BasicLayout />
     </div>
   );
 }
