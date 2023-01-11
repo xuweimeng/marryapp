@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { NavBar, TabBar } from 'antd-mobile'
+import { TabBar } from 'antd-mobile'
 import {
   Route,
   Routes,
@@ -13,6 +13,7 @@ import {
   UnorderedListOutline,
   UserOutline,
 } from 'antd-mobile-icons'
+import Home from '@/pages/Home';
 
 import styles from './index.module.less'
 const Bottom: FC = () => {
@@ -61,9 +62,6 @@ export default () => {
   return (
     <Router initialEntries={['/home']}>
       <div className={styles.app}>
-        <div className={styles.top}>
-          <NavBar>配合路由使用</NavBar>
-        </div>
         <div className={styles.body}>
           <Routes>
             <Route path='/home' element={ <Home />} />
@@ -78,10 +76,6 @@ export default () => {
       </div>
     </Router>
   )
-}
-
-function Home() {
-  return <div>首页</div>
 }
 
 function Todo() {

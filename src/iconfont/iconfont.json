@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "112145733",
+      "name": "爱心",
+      "font_class": "love-b",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "112145734",
+      "name": "实名认证",
+      "font_class": "shimingrenzheng",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}
