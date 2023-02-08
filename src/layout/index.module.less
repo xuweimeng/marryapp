@@ -1,23 +1,18 @@
 .app {
+  width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.top {
-  flex: 0;
-  color: #61dafb;
-  border-bottom: solid 1px var(--adm-color-border);
 }
 
 .body {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 50px);
 }
 
 .bottom {
-  flex: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 49px;
   border-top: solid 1px var(--adm-color-border);
+  background-color: #fff;
 }

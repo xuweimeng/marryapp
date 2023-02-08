@@ -1,15 +1,16 @@
 .singlePeople {
   display: flex;
   background-color: #fff;
-  padding: .3rem;
+  width: 96%;
+  margin: 0.2rem 2% 0.25rem;
+  padding: 0.3rem;
   border-radius: var(--small-border-radious);
+  box-sizing: border-box;
 }
 
 .singlePeopleAvatar {
   width: 4rem;
   height: 4rem;
-  background-color: aqua;
-  border-radius: var(--small-border-radious);
 }
 
 .singlePeopleInfo {
@@ -26,22 +27,29 @@
 
 .singlePeopleInfoBaseName {
   font-size: 1rem;
-  color: var(--font-title);
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .singlePeopleInfoBaseAuth {
-  font-size: 0.65rem;
+  margin-left: .5rem;
+  font-size: 0.5rem;
+  line-height: 1.8rem;
   color: var(--font-secondary-title);
 }
 
 .singlePeopleInfoDetail {
-  font-size: .65rem;
-  line-height: 1.3rem;
+  font-size: .62rem;
+  line-height: 1.35rem;
+  font-weight: 500;
+  color: var(--font-secondary-title);
 }
 
 .singlePeopleInfoDemand {
   font-size: .6rem;
   line-height: 1rem;
+  font-weight: 500;
+  color: var(--font-secondary-title);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

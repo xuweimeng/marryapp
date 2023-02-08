@@ -9,6 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -21,14 +26,14 @@ code {
 :root {
 
   /* 字体颜色 */
+  --primary-color: #f03752;
   --font-title: rgba(0, 0, 0, 0.85);
   --font-primary-title: rgba(0, 0, 0, 0.65);
-  --font-secondary-title: rgba(0, 0, 0, 0.45);
+  --font-secondary-title: rgba(0, 0, 0, 0.55);
   --disable: rgba(0, 0, 0, 0.25);
   --border: rgba(0, 0, 0, 0.15);
   --backaground: rgba(0, 0, 0, 0.04);
   --primary: #1890ff;
-
 
   --small-border-radious: 0.3rem;
 }
