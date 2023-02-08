@@ -22,7 +22,7 @@ const Footer = () => {
 
   const tabs = [
     {
-      key: '/home',
+      key: '/',
       title: '首页',
       icon: <AppOutline />,
     },
@@ -42,7 +42,7 @@ const Footer = () => {
       icon: <UserOutline />,
     },
   ]
-  if(!['/home', '/todo', '/message', '/me'].includes(pathname)) return null;
+  if(!['/', '/todo', '/message', '/me'].includes(pathname)) return null;
 
   return (
     <TabBar activeKey={pathname} onChange={value => setRouteActive(value)}>

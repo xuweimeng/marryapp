@@ -11,7 +11,7 @@ export default () => {
       <div className={styles.app}>
         <div className={styles.body}>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/todo" element={<Todo />} />
             <Route path="/message" element={<Message />} />
             <Route path="/me" element={<PersonalCenter />} />
