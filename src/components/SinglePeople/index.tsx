@@ -1,13 +1,22 @@
 import React from "react";
-import { Avatar } from 'antd-mobile'
+import { useNavigate } from "react-router-dom";
+import { Avatar } from "antd-mobile";
 import styles from "./index.module.less";
-import IdenityPng from "@/assets/idenity.png";
+// import IdenityPng from "@/assets/idenity.png";
 import AvatarPng from "@/assets/avatar.png";
-const SinglePeople = () => {
+
+const SinglePeople = ({ id }: { id: number }) => {
+  const navigate = useNavigate();
+
+  // 导航到用户个人详情页面
+  const navigateTomember = () => {
+    navigate(`/member/${id}`);
+  };
+
   return (
-    <div className={styles.singlePeople}>
+    <div className={styles.singlePeople} onClick={navigateTomember}>
       <div className={styles.singlePeopleAvatar}>
-        <Avatar src={AvatarPng} style={{ '--size': '100%' }} />
+        <Avatar src={AvatarPng} style={{ "--size": "100%" }} />
       </div>
       <div className={styles.singlePeopleInfo}>
         <div className={styles.singlePeopleInfoBase}>
