@@ -9,19 +9,15 @@ export default () => {
   return (
     <Router>
       <div className={styles.app}>
-        <div className={styles.body}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/todo" element={<Todo />} />
-            <Route path="/message" element={<Message />} />
-            <Route path="/me" element={<PersonalCenter />} />
-            <Route path="/member/:id" element={<PeopleDetail />} />
-          </Routes>
-        </div>
-        <div className={styles.bottom}>
-          <Footer />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/todo" element={<Todo />} />
+          <Route path="/message" element={<Message />} />
+          <Route path="/me" element={<PersonalCenter />} />
+          <Route path="/member/:id" element={<PeopleDetail />} />
+        </Routes>
       </div>
+      <Footer />
     </Router>
   );
 };

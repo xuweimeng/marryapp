@@ -3,14 +3,14 @@ import { Button, Space, Swiper, Toast } from "antd-mobile";
 import { SwiperRef } from "antd-mobile/es/components/swiper";
 import styles from "./index.module.less";
 
-const HomeBanner = () => {
+const HomeBanner = ({height}: {height: number}) => {
   const colors = ["#ace0ff", "#bcffbd", "#e4fabd", "#ffcfac"];
 
   const items = colors.map((color, index) => (
     <Swiper.Item key={index}>
       <div
         className={styles.content}
-        style={{ background: color }}
+        style={{ background: color, height: `${height}px` }}
         onClick={() => {
           Toast.show(`你点击了卡片 ${index + 1}`);
         }}

@@ -34,8 +34,9 @@ code {
   --border: rgba(0, 0, 0, 0.15);
   --backaground: rgba(0, 0, 0, 0.04);
   --primary: #1890ff;
-
+  --mini-border-radious: 0.2rem;
   --small-border-radious: 0.3rem;
+  --middle-border-radious: 0.5rem;
 }
 
 /* 超出隐藏 */
