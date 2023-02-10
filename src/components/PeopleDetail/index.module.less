@@ -1,3 +1,4 @@
+
 .member {
   width: 100%;
   height: 100%;
@@ -12,13 +13,77 @@
 
 /* 基本信息 */
 .memberBasicInfo {
+  background-color: #fff;
+  margin: 0.2rem 0;
+  padding: 0.4rem 0.5rem;
 
-}
-/* 详细信息 */
-.memberDetailInfo {
 
+  
+  border-radius: var(--mini-border-radious);
 }
-/* 个人要求 */
-.memberRequire {
+
+.memberBasicInfoHeader {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.memberTitle {
+}
+
+.memberName {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.memberNickName {
+  margin-top: .15rem;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.membercert {
+  display: inline-block;
+  width: 2rem;
+  height: .8rem;
+  margin-left: .5rem;
+  margin-top: .4rem;
+  background-image: url(//wx-img.jhrx.cn/xiangqin/2022/image/ic_home_cert.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.memberId {
+  padding-top: .1rem;
+  font-size: 0.6rem;
+}
+
+.memberCare {
+  width: 1.5rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 3.3rem;
+  background-image: url(//wx-img.jhrx.cn/xiangqin/2022/img/ic_m_fav.png);
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-position: top center;
+  color: var(--font-secondary-title);
+}
+
+.memberBasicInfoRowCell {
+  display: flex;
+  flex-direction: row;
+  line-height: .8rem;
+  margin-top: .4rem;
+}
+.memberBasicInfoRowCellIcon {
+ margin-right: .3rem;
+}
+.memberBasicInfoRowCellInfo {
 
 }
