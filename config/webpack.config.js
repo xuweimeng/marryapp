@@ -74,8 +74,8 @@ const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
-const lessRegex = /\.(less)$/;
-const lessModuleRegex = /\.module\.(less)$/;
+const lessRegex = /\.less$/;
+const lessModuleRegex = /\.module\.less$/;
 
 const hasJsxRuntime = (() => {
   if (process.env.DISABLE_NEW_JSX_TRANSFORM === 'true') {
@@ -126,6 +126,9 @@ module.exports = function (webpackEnv) {
       {
         loader: require.resolve('css-loader'),
         options: cssOptions,
+      },
+      {
+        loader: require.resolve('less-loader'),
       },
       {
         // Options for PostCSS as we reference these options twice
@@ -558,14 +561,17 @@ module.exports = function (webpackEnv) {
               test: lessRegex,
               exclude: lessModuleRegex,
               use: getStyleLoaders({
-                importLoaders: 1,
+                importLoaders: 2,
                 sourceMap: isEnvProduction ?
                   shouldUseSourceMap :
                   isEnvDevelopment,
                 modules: {
                   mode: 'icss',
                 },
-              }),
+              },
+              'less-loader'
+              ),
+
               // Don't consider CSS imports dead code even if the
               // containing package claims to have no side effects.
               // Remove this when webpack adds a warning or an error for this.
@@ -577,7 +583,7 @@ module.exports = function (webpackEnv) {
             {
               test: lessModuleRegex,
               use: getStyleLoaders({
-                importLoaders: 1,
+                importLoaders: 2,
                 sourceMap: isEnvProduction ?
                   shouldUseSourceMap :
                   isEnvDevelopment,
@@ -585,7 +591,9 @@ module.exports = function (webpackEnv) {
                   mode: 'local',
                   getLocalIdent: getCSSModuleLocalIdent,
                 },
-              }),
+              },
+              'less-loader'
+              ),
             },
             {
               // Exclude `js` files to keep "css" loader working as it injects

@@ -148,11 +148,12 @@ const PeopleDetail = () => {
         </Grid>
       </div>
       <div className={styles.memberAlbumFooter}>
-        <div className={styles.memberAlbumFooterItem}>
+        <div className={styles.memberAlbumFooterItemLeft}>
         分享
         </div>
-        <div className={styles.memberAlbumFooterItem}>
+        <div className={styles.memberAlbumFooterItemRight}>
         红娘牵线
+        <span>22</span>
         </div>
       </div>
     </div>
