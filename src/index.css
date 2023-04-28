@@ -34,7 +34,7 @@ code {
   --font-secondary-title: rgba(0, 0, 0, 0.55);
   --disable: rgba(0, 0, 0, 0.25);
   --border: rgba(0, 0, 0, 0.15);
-  --backaground: rgba(0, 0, 0, 0.04);
+  --backaground: #f4f5f6;
   --primary: #1890ff;
   --mini-border-radious: 0.2rem;
   --small-border-radious: 0.3rem;
@@ -46,4 +46,10 @@ code {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

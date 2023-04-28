@@ -12,3 +12,10 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  background-image: url(https://wx-img.jhrx.cn/xiangqin/2022/img/bg/icon_sys_site_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
